@@ -1,0 +1,15 @@
+# https://alvinalexander.com/source-code/scala/sample-gitignore-file-scala-sbt-intellij-eclipse/
+
+# bloop and metals
+.bsp
+
+# sbt
+project/project/
+project/target/
+target/
+
+# intellij idea
+.idea
+
+# mac
+.DS_Store
