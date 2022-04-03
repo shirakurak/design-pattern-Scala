@@ -10,8 +10,11 @@ class BookShelf(maxsize:Int) extends Aggregate {
 
   def appendBook(book:Book): Unit = {
     books(last) = book
-    
+    last = last + 1
   }
-  override def iterator(): Iterator = BookShelfIterator(that)
+
+  def getLength(): Int = last
+
+  override def iterator(): Iterator = BookShelfIterator(this)
 
 }
